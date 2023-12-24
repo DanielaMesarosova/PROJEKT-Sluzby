@@ -46,3 +46,13 @@ a{
     font-weight: bold;
     text-decoration: none;
 }
+
+
+.kontejner{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.box1{
+    
+}
