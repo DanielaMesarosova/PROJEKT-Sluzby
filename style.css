@@ -3,25 +3,60 @@ html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; }
 
 body{
-    margin: 0;
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
     color: #8B8B8B;
+    background-color: #FAFAFA;
     font-size: 16px;
     font-weight: 300;
+}
+
+.kontejner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 h1{
     color: black;
     font-size: 28px;
     font-weight:500;
+    text-align: center;
 }
+
+  h1::after {
+    content: " ";
+    display: block;
+    background-color: #407bff;
+    width: 60px;
+    height: 2px;
+    margin: 10px auto 15px auto;
+  }
+
 
 h2{
     color: black;
     font-weight: 500;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 16px;
 }
 
+.happy-traveller{
+    margin: 60px auto 40px auto;
+    max-width: 100%;
+}
+
+.text{
+    margin: 15px auto 30px auto;
+}
+
+.tlacitko{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /* text na tlaciku plaz a dobrodruzstvi */
 a{ 
@@ -31,50 +66,164 @@ a{
     text-decoration: none;
 }
 
-/* text na tlaciku s ikonama */
-.ikona-text p{
-    font-size: 13px;
-    font-weight: 300;
-}
-
-.line{
-    border-top: 2px solid #407BFF; 
-    width: 60px;
-    margin-top: 10px; 
-    margin-bottom: 30px; 
-    align-content: center;
-  }
-
 .dobrodruzstvi { 
     background-color: #407BFF;
-    display: block;
-    /* flex-wrap: wrap; */
+    display: inline-block;
     text-align: center;
     border-radius: 20px;
-    padding: 10px;
+    border: 0;
+    padding: 10px 30px;
+    margin-bottom: 10px;
 }
 
 .plaz { 
     background-color: #8B8B8B;
-    display: block;
+    display: inline-block;
     text-align: center;
     border-radius: 20px;
-    margin:0;
-    padding: 10px;
+    border:0;
+    padding: 10px 30px;
+    text-align: center;
 }
 
-.kontejner{
-    display: flex;
-    flex-wrap: wrap;
-  }
-
+/* spodni boxiky s ikonama - cely box */
 .box{
-    flex: 0 0 calc((100% - 20px) / 2);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+/* spodni boxiky s ikonama jednotlive */
+.ikona{
+    display: flex;
 	background-color: white;
 	border-radius: 10px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-    margin-bottom: 15px;
+	box-shadow: 0 4px 6px #407BFF1F;
+    border: 0;
+    margin: 0 20px 15px 0;
 }
+
+/* text na tlaciku s ikonama */
+.ikona-text{
+    font-size: 13px;
+    font-weight: 300;
+    text-align: left;
+    margin: 30px 60px 20px 20px;
+}
+
+/* ikona na tlaciku s ikonama */
+.icon{
+    height: 40px;
+    width: auto;
+    margin: 20px;
+}
+
+@media screen and (min-width:640px) {
+
+.text{
+    max-width: 80%;
+      }
+
+.tlacitko {
+    flex-direction: row;
+      }
+
+.dobrodruzstvi {
+    margin-bottom: 0;
+    margin-right: 20px;
+      }
+
+.plaz{
+    margin-bottom: 0;
+}      
+
+.box{
+    flex-direction: row;
+    padding-right: 0;
+    }
+  
+.ikona {
+    flex: 0 0 calc(100% / 3);
+    flex-direction: column;
+    text-align: center; 
+    }
+  
+.icon{
+    margin-bottom:0;
+    margin-top: 40px;
+    }
+  
+.ikona-text{
+    margin: 20px 15px 20px 15px;
+    text-align: center; 
+    }
+}
+
+
+@media screen and (min-width:1100px){
+  
+    .section{
+      max-width: 80%;
+      margin:0 auto;
+    }
+
+    .kontejner-jedna,
+    .kontejner-dva,
+    .kontejner-tri{
+      flex-direction: row;
+      gap: 60px;
+      max-width:80%;
+      margin: 0 auto;
+    }
+
+    .kontejner-jedna,
+    .kontejner-dva {
+      flex-direction: row-reverse;
+    }
+  
+    .uvod {
+    max-width:50%;
+    margin-right: 20px;
+    }
+  
+    h1,
+    h2{
+      text-align: left; 
+    }
+  
+    h1::after {
+      text-align:left;
+      margin: 10px 0 15px 0;
+    }
+  
+    h2
+    {
+      text-align: left; 
+    }
+    
+    .tlacitko{
+      justify-content: left;
+    }
+
+    .text{
+      max-width: 100%;
+      margin: 10px 0 15px 0;
+      text-align: start;
+    }
+  
+    .popis-dva{
+      margin-left: 55px;
+    }
+  
+    .box{
+      max-width: 58%;
+    }
+
+    .popis-tri{
+      max-width:42%;
+    }
+  
+    .kontejner-tri{
+      margin-top: 75px;
+    }
+  }
