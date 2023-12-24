@@ -7,28 +7,40 @@ body{
 
 h1{
     color: black;
+    font-size: 28px;
 }
 
+h2{
+    font-size: 16px;
+}
+
+/* bezny text */
 p{
     color: #8B8B8B;
 }
 
-.line {
+/* text na tlaciku plaz a dobrodruzstvi */
+a{ 
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.line{
     border-top: 2px solid #407BFF; 
     width: 60px;
     margin-top: 10px; 
     margin-bottom: 30px; 
+    align-content: center;
   }
-
-
 
 .dobrodruzstvi { 
     background-color: #407BFF;
     display: block;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     text-align: center;
     border-radius: 20px;
-    margin-bottom: 10px;
     padding: 10px;
 }
 
@@ -37,16 +49,9 @@ p{
     display: block;
     text-align: center;
     border-radius: 20px;
+    margin:0;
     padding: 10px;
 }
-
-a{ 
-    font-size: 14px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-
 
 .kontejner{
     display: flex;
