@@ -10,7 +10,9 @@ body{
     font-weight: 300;
 }
 
-.kontejner{
+.kontejner-jedna,
+.kontejner-dva,
+.kontejner-tri{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,7 +34,6 @@ h1{
     height: 2px;
     margin: 10px auto 15px auto;
   }
-
 
 h2{
     color: black;
