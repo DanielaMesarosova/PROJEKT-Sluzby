@@ -164,7 +164,7 @@ a{
 @media screen and (min-width:1100px){
   
     .section{
-      max-width: 80%;
+      max-width: 100%;
       margin:0 auto;
     }
 
@@ -184,7 +184,7 @@ a{
   
     .uvod {
     max-width:50%;
-    margin-right: 20px;
+    margin-right: 30px;
     }
   
     h1,
@@ -194,7 +194,7 @@ a{
   
     h1::after {
       text-align:left;
-      margin: 10px 0 15px 0;
+      margin: 10px 0 30px 0;
     }
   
     h2
@@ -213,18 +213,25 @@ a{
     }
   
     .popis-dva{
-      margin-left: 55px;
+      margin-left: 60px;
+      margin-bottom: 60px;
+      max-width: 430px;
     }
   
     .box{
-      max-width: 58%;
+      max-width: 550px;
     }
 
     .popis-tri{
-      max-width:42%;
+      max-width:430px;
+      margin-bottom: 60px;
+    }
+
+    .kontejner-dva{
+        margin-top: 80px;
     }
   
     .kontejner-tri{
-      margin-top: 75px;
+      margin-top: 80px;
     }
   }
